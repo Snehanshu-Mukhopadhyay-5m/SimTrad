@@ -180,6 +180,10 @@ class TradingSimulator:
         self.log_transaction(action.capitalize(), category, asset, amount, price)
         self.transaction_history.append(f"{action.capitalize()} {amount} {asset} @ ₹{price:,.2f}")
         self.save_user_data()
+        
+        # --- NEW REPORTING LINE ---
+        print(f"REPORT: User {self.username} just {action}ed {amount} of {asset} at ₹{price}")
+        
         return None
 
     def logout(self):
@@ -222,6 +226,9 @@ def register():
     sim.save_user_data() 
     active_simulators[username] = sim
     
+    # --- NEW REPORTING LINE ---
+    print(f"REPORT: NEW USER REGISTERED - {username} from {city}")
+    
     return jsonify({"success": True})
 
 @app.route('/api/login', methods=['POST'])
@@ -235,7 +242,6 @@ def login():
 
     file_path = os.path.join("records", f"{username}_data.json")
     if not os.path.exists(file_path):
-        # NEW: Added error_code so frontend knows exactly why it failed
         return jsonify({"success": False, "message": "User not found. Please register.", "error_code": "user_not_found"}), 404
 
     with open(file_path, "r") as f:
@@ -246,6 +252,9 @@ def login():
     session['username'] = username
     if username not in active_simulators:
         active_simulators[username] = TradingSimulator(username, password, user_data.get("city", "Unknown"))
+        
+    # --- NEW REPORTING LINE ---
+    print(f"REPORT: User {username} from {user_data.get('city', 'Unknown')} logged in.")
         
     return jsonify({"success": True})
 
