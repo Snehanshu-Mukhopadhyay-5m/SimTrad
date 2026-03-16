@@ -1,6 +1,6 @@
-# 📈 SImTrad - Real-Time Virtual Trading Simulator
+# 📈 SimTrad - Real-Time Virtual Trading Simulator
 
-SImTrad is a full-stack web application designed for users to practice trading stocks and cryptocurrencies in a risk-free environment. Using live-simulated data and high-fidelity charting, it provides an authentic experience of market volatility without the financial risk.
+SimTrad is a full-stack web application designed for users to practice trading stocks and cryptocurrencies in a risk-free environment. Using live-Simulated data and high-fidelity charting, it provides an authentic experience of market volatility without the financial risk.
 
 ## 🚀 Key Features
 * **Live Market Engine:** Real-time price fluctuations across multiple asset classes (Stocks & Cryptos) powered by Python threading.
@@ -18,7 +18,7 @@ SImTrad is a full-stack web application designed for users to practice trading s
 
 ## 📂 Project Structure
 ```text
-SImTrad/
+SimTrad/
 ├── Backend/
 │   ├── app.py           # Core Flask application & Market Engine
 │   ├── static/          # Images, Profile Photos, and CSS
@@ -30,7 +30,7 @@ SImTrad/
 
 
 ## ⚙️ Installation & Usage
-Follow these steps to get a local copy of SImTrad up and running on your machine.
+Follow these steps to get a local copy of SimTrad up and running on your machine.
 
 # 1. Prerequisites
 Python 3.8+ installed on your system.
@@ -41,8 +41,8 @@ Git installed on your system.
 Open your terminal or PowerShell and run:
 
 ```bash
-git clone [https://github.com/Snehanshu-Mukhopadhyay-5m/SImTrad.git](https://github.com/Snehanshu-Mukhopadhyay-5m/SImTrad.git)
-cd SImTrad
+git clone [https://github.com/Snehanshu-Mukhopadhyay-5m/SimTrad.git](https://github.com/Snehanshu-Mukhopadhyay-5m/SimTrad.git)
+cd SimTrad
 ```
 # 3. Set Up a Virtual Environment (Recommended)
 This keeps your project dependencies isolated and clean.
@@ -63,7 +63,7 @@ source .venv/bin/activate
 ```
 
 ## 4. Install Dependencies
-SImTrad runs on the Flask web framework.
+SimTrad runs on the Flask web framework.
 
 ```bash
 pip install flask
@@ -85,14 +85,14 @@ http://127.0.0.1:5000
 
 
 ## 🔗 Live Demo
-🚀 **Check out the app here:** [SimTrad Virtual Trading Simulation](https://simtrad.onrender.com)
+🚀 **Check out the app here:** [SimTrad Virtual Trading Simulation](https://Simtrad.onrender.com)
 
 
 
 👨‍💻 About the Developer
 Snehanshu Mukhopadhyay B.Tech CSE (Artificial Intelligence & Machine Learning) | 4th Semester | Jaipur
 
-I am a developer focused on building tools that merge data science with practical software engineering. My interests include AI/ML model development, Cloud Computing (GCP/Azure), and Business Intelligence. Beyond SImTrad, I've worked on Emotion Detection models using Flask and participated in Kaggle Machine Learning competitions.
+I am a developer focused on building tools that merge data science with practical software engineering. My interests include AI/ML model development, Cloud Computing (GCP/Azure), and Business Intelligence. Beyond SimTrad, I've worked on Emotion Detection models using Flask and participated in Kaggle Machine Learning competitions.
 
 License: MIT
 
