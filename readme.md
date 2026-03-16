@@ -83,6 +83,12 @@ Once the server is running, open your web browser and go to:
 http://127.0.0.1:5000
 ```
 
+
+## 🔗 Live Demo
+🚀 **Check out the app here:** [SimTrad Virtual Trading Simulation](https://simtrad.onrender.com)
+
+
+
 👨‍💻 About the Developer
 Snehanshu Mukhopadhyay B.Tech CSE (Artificial Intelligence & Machine Learning) | 4th Semester | Jaipur
 
